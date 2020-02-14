@@ -4,13 +4,12 @@ import './Webcam.css';
 
 class Show extends Component {
 
-constructor(props) {
-      super(props);
-      this.state = {
+
+    state = {
         open: false
         }
-        this.togglePanel = this.togglePanel.bind(this);
-      }
+
+
       togglePanel(e){
       this.setState({open: !this.state.open})
       }
