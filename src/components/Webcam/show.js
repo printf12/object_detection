@@ -6,13 +6,17 @@ class Show extends Component {
 
 
     state = {
-        open: false
-        }
+        open: false,
+        file:[]
+      };
 
 
-      togglePanel(e){
+
+      togglePanel= (e) => {
+
+
       this.setState({open: !this.state.open})
-      }
+    };
 
 
   render (){
@@ -21,7 +25,7 @@ class Show extends Component {
       <div className='Webcam bx--grid'>
       <div className='button-group-container'>
           <div className='button-group bx--row'>
-             <img className="thumbnail zoom" src={this.props.location.state.result.filename1} alt="resu" style={{width: 500, height: 500}}/>
+             <img className="thumbnail zoom" src={require('../../../../backend/uploads/'+ this.props.location.state.result.filename1)}alt="resu" style={{width: 500, height: 500}}/>
              <div>
         <div className="file-upload">
              <div onClick={(e)=>this.togglePanel(e)} className='header'>

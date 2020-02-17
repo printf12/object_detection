@@ -18,10 +18,8 @@ class App extends Component {
         </div>
 
           <div className="container">
-          <Switch>
-            <Route exact path="/show" component={Show} />
             <Route exact path="/upload" component={WebcamCapture} />
-          </Switch>
+            <Route exact path="/show" component={Show} />
         </div>
       </Router>
 
