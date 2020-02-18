@@ -1,18 +1,15 @@
 
 .Header {
     color: white;
-    position: relative;
-    width: 100%;
-    background-color: #5596e6;
-    border-bottom: 1px solid #3d70b2;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 10px 25px;
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.7);
-    border-radius: 2rem;
-    margin-top: 30px;
+    background-color: #84b4b1;
+    padding: 30px 0 20px;
+}
+.active{
+  color:white;
+  text-decoration: none;
 }
 
 .watson-logo {
     height: 16px
 }
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 100px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const header = () => {
@@ -8,11 +8,13 @@ const header = () => {
         <div className='Header'>
             <div className='bx--row'>
                 <div>
+                <a>
                     <header>
-                    <Link to="/upload" className="nav-link">
+                    <NavLink to="/upload" activeStyle={{ color: 'white' }} className="active">
           <h1>click hier</h1>
-        </Link>
+        </NavLink>
                     </header>
+                    </a>
                 </div>
             </div>
         </div>

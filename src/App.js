@@ -14,12 +14,13 @@ class App extends Component {
     return (
       <Router>
       <div className='App bx--grid'>
-        <Header/>
         </div>
 
           <div className="container">
-            <Route exact path="/upload" component={WebcamCapture} />
+          <Switch>
+            <Route exact path="/" component={WebcamCapture} />
             <Route exact path="/show" component={Show} />
+            </Switch>
         </div>
       </Router>
 

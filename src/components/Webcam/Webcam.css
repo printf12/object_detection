@@ -1,12 +1,56 @@
 /* // @import '~carbon-components/scss/globals/scss/styles.scss'; */
+.imga {
+  left:0;
+  right:0;
+  text-align:center;
+  width:100%;
+  max-width:600px;
+  max-height:600px;
+  justify-content: center;
+  height: 100%.
 
+}
+
+
+.active {  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  width:100%;
+  background-color: #1ab188;
+  box-shadow: 0 6px darken(#f79159, 10%);
+  transition: none;
+}
+
+body {
+  background-color:#efefef;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.container {
+    background:white;
+    margin:60px auto 120px;
+    border-top:15px solid $blue;
+    text-align:center;
+  	padding:50px 0 50px;
+    width:80%;
+
+}
 .Webcam {
     text-align: center;
-    border: 1px solid black;
     background-color: white;
     padding-top: 20px;
     margin-top: 30px;
-    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.7);
     border-radius: 2rem;
 }
 
@@ -39,10 +83,26 @@
 }
 
 .button-group {
+    padding: 13px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.button-gr {
+  border-top: solid 5px #f2f2f2;
+  border-left: solid 5px #f2f2f2;
+  border-right: solid 5px #f2f2f2;
+  border-bottom: solid 5px #f2f2f2;
+  background:#f2f2f2;
+
+  border-radius: 2rem;
+  text-align:center;
+  padding: 15px;
+  font-family: verdana;
+  font-size: 14px;
+  padding: 13px 50px;
+
 }
 
 .restart-logo {
@@ -67,7 +127,8 @@
       position: relative;
       transition: all 0.3s;
       vertical-align: middle;
-      background-color: #219bd7;
+      width:100%;
+      background-color: #1ab188;
       box-shadow: 0 6px darken(#f79159, 10%);
       transition: none;
 
@@ -87,7 +148,8 @@
       }
 
       .file-upload {
-          background-color: #ffffff;
+        background:#f2f2f2;
+
           width: 600px;
           margin: 0 auto;
           padding: 20px;
@@ -125,7 +187,9 @@
       color: #FFF;
       font-family: verdana;
       }
+
       .content{
+      text-align:center;
       cursor: pointer;
       border-left: solid 1px #f2f2f2;
       border-right: solid 1px #f2f2f2;
