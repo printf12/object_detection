@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './Webcam.css';
+import './Detection.css';
 import { Button } from 'carbon-components-react';
-import CameraIcon from '../../assets/icons8-camera-100.png'
+import CameraIcon from '../assets/icons8-camera-100.png'
 import NativeListener from 'react-native-listener';
 
 
-class WebcamCapture extends Component {
+class Detection extends Component {
   constructor(props) {
           super(props)
  this.state = {
@@ -90,7 +90,7 @@ class WebcamCapture extends Component {
                          })
                     });
 
-          
+
 
       }
       uploadSingleFile(e) {
@@ -160,4 +160,4 @@ class WebcamCapture extends Component {
     }
 }
 
-export default WebcamCapture ;
+export default Detection ;

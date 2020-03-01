@@ -1,5 +1,5 @@
 import React, { Component  } from 'react';
-import './Webcam.css';
+import './Detection.css';
 import { NavLink } from 'react-router-dom'
 
 class Show extends Component {
@@ -26,7 +26,7 @@ class Show extends Component {
       <div className='button-group-container'>
 
               <div className='button-group bx--row'>
-                  <img className="thumbnail zoom" src={require('../../../../backend/uploads/'+ this.props.location.state.result.filename1)}alt="resu" style={{width: 500, height: 500}}/>
+                  <img className="thumbnail zoom" src={require('../../../backend/uploads/'+ this.props.location.state.result.filename1)}alt="resu" style={{width: 500, height: 500}}/>
               </div>
 
               <div className='button-group '>
