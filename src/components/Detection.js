@@ -25,8 +25,6 @@ class Detection extends Component {
   handleUploadImage(e)  {
     e.preventDefault();
     e.stopPropagation();
-
-
     const data = new FormData();
     data.append('file', this.uploadInput1.files[0]);
     data.append('graph', this.uploadInput2.files[0]);
@@ -48,7 +46,7 @@ class Detection extends Component {
     } else{
       if(arr.indexOf(re.exec(this.uploadInput1.value)[1])  >> 1 ){
         this.setState({
-                fileE: "image extesion not allowed"
+                fileE: "image extension not allowed"
               })
 
       }
@@ -61,7 +59,7 @@ class Detection extends Component {
 
         if(((re.exec(this.uploadInput2.value)[1]) !== 'pb') ){
           this.setState({
-                  graphE: "graph extesion not allowed"
+                  graphE: "graph extension not allowed"
                 })
 
         }
@@ -75,27 +73,23 @@ class Detection extends Component {
 
         if(((re.exec(this.uploadInput3.value)[1]) !== 'pbtxt')){
           this.setState({
-                  labelE: "label extesion not allowed"
+                  labelE: "label extension not allowed"
                 })
 
         }
 
     }
-
-
-                axios.post('http://localhost:5000/upload', data)
-                    .then(response => {
-                          result= response.data
-                          this.setState({
-                                  result: result
-                                })
-                           this.props.history.push({
-                           pathname: `/show`,
-                           state: { result}
-                         })
-                    });
-
-
+    axios.post('http://localhost:5000/upload', data)
+        .then(response => {
+              result= response.data
+              this.setState({
+                      result: result
+                    })
+               this.props.history.push({
+               pathname: `/show`,
+               state: { result}
+             })
+        });
 
       }
       uploadSingleFile(e) {
