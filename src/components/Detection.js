@@ -48,7 +48,7 @@ class Detection extends Component {
     } else{
       if(arr.indexOf(re.exec(this.uploadInput1.value)[1])  >> 1 ){
         this.setState({
-                fileE: "image extesion"
+                fileE: "image extesion not allowed"
               })
 
       }
@@ -61,7 +61,7 @@ class Detection extends Component {
 
         if(((re.exec(this.uploadInput2.value)[1]) !== 'pb') ){
           this.setState({
-                  graphE: "graph extesion"
+                  graphE: "graph extesion not allowed"
                 })
 
         }
@@ -75,7 +75,7 @@ class Detection extends Component {
 
         if(((re.exec(this.uploadInput3.value)[1]) !== 'pbtxt')){
           this.setState({
-                  labelE: "label extesion"
+                  labelE: "label extesion not allowed"
                 })
 
         }
