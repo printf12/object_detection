@@ -34,6 +34,11 @@ class Detection extends Component {
     let result;
     const re = /(?:\.([^.]+))?$/
     var arr =['png' ,'jpg','jpeg','PNG' ,'JPG','JPEG'];
+    this.setState({
+            fileE: "",
+            graphE: "",
+            labelE: ""
+          })
 
 
     if(this.uploadInput1.files[0] == null){
