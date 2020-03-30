@@ -10,8 +10,6 @@ class Show extends Component {
         file:[]
       };
 
-
-
       togglePanel= (e) => {
 
 
@@ -40,12 +38,7 @@ class Show extends Component {
                        <div className="file-upload">
                           {this.props.location.state.result.valid}
                        </div>
-                       <div className="file-upload">
-                          {this.props.location.state.result.problem}
-                       </div>
-                       <div className="file-upload">
-                          {this.props.location.state.result.notsure}
-                       </div>
+                       
                      </div>
                    ) : null}
               </div>
